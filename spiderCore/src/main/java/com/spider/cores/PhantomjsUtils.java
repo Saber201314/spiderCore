@@ -30,7 +30,6 @@ public class PhantomjsUtils {
 	public static String Get(String url ) throws IOException{
 		
 		Runtime rt = Runtime.getRuntime();
-		        //phantomjs 和codes.js的路径之间有个空格 本代码只是测试用的绝对路径 
 //				Process p = rt.exec("/data/phantomjs2.1/bin/phantomjs /data/codes.js " + url);
 				Process p = rt.exec("E:/phantomjs.exe E:/codes.js "+url);
 				

@@ -52,10 +52,10 @@ public class spiderCore_Test {
 
 		try {
 			String keyName = "笔记本";
-			
 			keyName = webUtils.UrlDecoders(keyName, "utf-8");
 			testUrl = testUrl.replace("***", keyName);
 			System.out.println(testUrl);
+			String pageUrl = "https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w11903914-14996550753.7.8S1bHY&id=527031548608";
 			String page = PhantomjsUtils.Get(testUrl);
 			ShowMessage(page);
 		} catch (IOException e) {
